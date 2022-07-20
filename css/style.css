@@ -24,10 +24,6 @@ html{
      font-size: 62.5%;
 }
 
-body {
-
-}
-
 
 /******************************************
 /* LAYOUT
@@ -93,8 +89,25 @@ input:focus{
      padding: 1rem;
 }
 
-footer {
+section.hide{
+     display: none;
+}
+.results{
+     height: 80rem;
+     background: #87ba52;
+     color: #8452ba;
+}
 
+.results h2{
+     text-align: center;
+     padding: 3%;
+}
+.resultsUL{
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 2rem;
 }
 
 /******************************************
