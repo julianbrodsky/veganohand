@@ -20,6 +20,9 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+html{
+     font-size: 62.5%;
+}
 
 body {
 
@@ -30,7 +33,64 @@ body {
 /* LAYOUT
 /*******************************************/
 header {
+background: #ba6c52;
+height: 12rem;
+}
 
+ul{
+display: flex;
+flex-flow: nowrap row;
+justify-content: space-around;
+align-items: center;
+flex: 1 1 0;
+}  
+
+header img{
+     height: 12rem;
+}
+
+h2{
+     font-size: 4rem;
+}
+
+
+.homepageMain{
+     height: 80rem;
+     background-image: url("../images/vegetables.jpg");
+     background-size: cover;
+     display: flex;
+     font-size: 4rem;
+     justify-content: center;
+     align-items: center;
+}
+.search{
+     padding: 2rem;
+     width: 100rem;
+     background: white;
+     border: 2px solid gray;
+     border-radius: 5rem;
+     display: flex;
+     justify-content: space-between;
+}
+
+.search input{
+     flex-basis: 5;
+     border: none;
+     width: 90rem;
+     font-size: 2rem;
+}
+
+input:focus{
+     outline: none;
+}
+
+.search button{
+     background: #ba6c52;
+     border: none;
+     border-radius: 2rem;
+     color: white;
+     font-size: 2rem;
+     padding: 1rem;
 }
 
 footer {
