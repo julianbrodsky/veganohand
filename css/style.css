@@ -67,7 +67,8 @@ h2{
      border-radius: 5rem;
      border: none;
      font-size: 2rem;
-     background: #85a167;
+     background: #87ba52; 
+     /* on select become #85a167; */
      color: white;
 }
 .search{
@@ -125,3 +126,35 @@ section.hide{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media all and (max-width: 1030px){
+     .search{
+          max-width: 60rem;
+     }
+     .tagsContainer{
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+     }
+}
+
+@media all and (max-width: 625px){
+     .search{
+          max-width: 50rem;
+     }
+     .search input::placeholder{
+          color: transparent;
+     }
+}
+
+@media all and (max-width: 522px){
+     .search{
+          max-width: 40rem;
+     }
+}
+
+@media all and (max-width: 418px){
+     .search{
+          max-width: 30rem;
+     }
+}
