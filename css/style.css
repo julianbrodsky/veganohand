@@ -58,6 +58,17 @@ h2{
      font-size: 4rem;
      justify-content: center;
      align-items: center;
+     flex-flow: column wrap;
+}
+
+.tags{
+     padding: 2rem;
+     background: white;
+     border-radius: 5rem;
+     border: none;
+     font-size: 2rem;
+     background: #85a167;
+     color: white;
 }
 .search{
      padding: 2rem;
@@ -67,6 +78,7 @@ h2{
      border-radius: 5rem;
      display: flex;
      justify-content: space-between;
+     margin: 2%;
 }
 
 .search input{
@@ -107,7 +119,7 @@ section.hide{
      flex-flow: column wrap;
      justify-content: space-between;
      align-items: center;
-     font-size: 2rem;
+     font-size: 2rem; 
 }
 
 /******************************************
