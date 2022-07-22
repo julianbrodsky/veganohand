@@ -127,6 +127,7 @@ background: #ba6c52;
 
 .resultsUL li{
      padding-bottom: 1rem;
+     word-break: break-word;
 }
 
 /******************************************

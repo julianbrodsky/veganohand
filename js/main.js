@@ -76,7 +76,6 @@ document.querySelector('.whiteBar').classList.remove('hide')
 
 
 //api request for the search query and tags submitted
-console.log(tags)
 fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${userQuery}&app_id=b76dc390&app_key=8cdd68de3e3deb4065a37433c066f003${tags}`)
 .then(res => res.json())
 .then(data => {
@@ -89,7 +88,6 @@ fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${userQuery}&app_id=b
     //loops through all recipes from the api's response, 
     //creates an lis to hold them, and puts the recipe name and url in the li
     data.hits.forEach( (item) => {
-        console.log(item)
         let li = document.createElement('li')
         document.querySelector('.resultsUL').appendChild(li)
         li.textContent = `${item.recipe.label}: ${item.recipe.url}`
