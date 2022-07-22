@@ -108,7 +108,7 @@ background: #ba6c52;
 }
 
 .results{
-     height: 80rem;
+     height: fit-content;
      background: #170D09;
      color: #d6a898;
 }
@@ -144,6 +144,7 @@ background: #ba6c52;
      }
 }
 
+
 @media all and (max-width: 625px){
      .search{
           max-width: 50rem;
@@ -162,5 +163,8 @@ background: #ba6c52;
 @media all and (max-width: 418px){
      .search{
           max-width: 30rem;
+          flex-wrap: wrap;
+          justify-content: flex-end;
      }
+
 }
