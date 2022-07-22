@@ -31,15 +31,10 @@ html{
 header {
 background: #ba6c52;
 height: 12rem;
+display: flex;
+justify-content: center;
 }
 
-ul{
-display: flex;
-flex-flow: nowrap row;
-justify-content: space-around;
-align-items: center;
-flex: 1 1 0;
-}  
 
 header img{
      height: 12rem;
@@ -103,13 +98,19 @@ input:focus{
      padding: 1rem;
 }
 
-section.hide{
+.hide{
      display: none;
 }
+
+.whiteBar{
+height: 3rem;
+background: #ba6c52;
+}
+
 .results{
      height: 80rem;
-     background: #87ba52;
-     color: #8452ba;
+     background: #170D09;
+     color: #d6a898;
 }
 
 .results h2{
@@ -122,6 +123,10 @@ section.hide{
      justify-content: space-between;
      align-items: center;
      font-size: 2rem; 
+}
+
+.resultsUL li{
+     padding-bottom: 1rem;
 }
 
 /******************************************

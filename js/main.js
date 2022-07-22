@@ -72,6 +72,8 @@ let ul = document.querySelector('.resultsUL')
 
 //displays the results section at the bottom of the page
 document.querySelector('.results').classList.remove('hide')
+document.querySelector('.whiteBar').classList.remove('hide')
+
 
 //api request for the search query and tags submitted
 console.log(tags)
@@ -90,7 +92,7 @@ fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${userQuery}&app_id=b
         console.log(item)
         let li = document.createElement('li')
         document.querySelector('.resultsUL').appendChild(li)
-        li.textContent = `${item.recipe.label} ${item.recipe.url}`
+        li.textContent = `${item.recipe.label}: ${item.recipe.url}`
     })
     //scrolls to the results section
     ul.scrollIntoView({behavior: 'smooth', block: "center"})
@@ -101,5 +103,3 @@ fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${userQuery}&app_id=b
 })
 
 }
-
-
