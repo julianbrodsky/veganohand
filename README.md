@@ -4,7 +4,7 @@ A vegan recipe search engine aiming to spread cruelty-free eating, Vegan Oh And 
 
 Use tags as filters, write a search query to meet your cravings, and find recipes that you both can eat, and can't wait to eat!
 
-Try it out and find your next meal. [Click here!](veganohand.netlify.app)
+Try it out and find your next meal. [Click here!](https://veganohand.netlify.app)
 
 ## 👨‍💻 Tech
 I built this from the ground up with HTML, CSS, and JavaScript! Object-oriented principles guided this project's JavaScript development. Thenables powered asynchronous functions, pulling recipe data from Edamam's Recipe API.
